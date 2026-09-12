@@ -470,7 +470,11 @@
   /* RESPONSIVE */
   @media (max-width: 768px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-photo-wrap { display: none; }
+    .hero-photo-wrap {
+      display: block;
+      max-width: 220px;
+      margin: 2rem auto 0;
+    }
     .about-grid, .contact-grid { grid-template-columns: 1fr; }
     .problem-grid, .services-grid { grid-template-columns: 1fr; }
     .project-card { grid-template-columns: 1fr; gap: 1rem; }
@@ -716,25 +720,29 @@
 
 <script>
 function setLang(lang) {
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.lang-btn[${lang === 'en' ? 'onclick="setLang(\'en\')"' : 'onclick="setLang(\'de\')"}]`).classList.add('active');
+  // Update active button
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim() === lang.toUpperCase());
+  });
 
+  // Update all elements with data-en / data-de
   document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (!val) return;
     if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-      el.placeholder = el.getAttribute('data-placeholder-' + lang) || el.getAttribute('data-' + lang);
+      el.placeholder = val;
     } else {
-      el.innerHTML = el.getAttribute('data-' + lang);
+      el.innerHTML = val;
     }
   });
 
-  document.querySelectorAll('input[data-placeholder-en], textarea[data-placeholder-en]').forEach(el => {
-    el.placeholder = el.getAttribute('data-placeholder-' + lang);
-  });
-
-  document.querySelectorAll('.nav-links a[data-en]').forEach(a => {
-    a.textContent = a.getAttribute('data-' + lang);
+  // Update form placeholders
+  document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+    const val = el.getAttribute('data-placeholder-' + lang);
+    if (val) el.placeholder = val;
   });
 }
+
 
 function handleSubmit(e) {
   e.preventDefault();
