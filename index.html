@@ -693,10 +693,12 @@
     <h2 class="section-title" data-en="Let's talk about your transformation" data-de="Lassen Sie uns über Ihre Transformation sprechen">Let's talk about your transformation</h2>
     <p class="section-sub" data-en="Interested in working together? Send me a message and I'll get back to you within 24 hours." data-de="Interesse an einer Zusammenarbeit? Schreiben Sie mir und ich melde mich innerhalb von 24 Stunden.">Interested in working together? Send me a message and I'll get back to you within 24 hours.</p>
     <div class="contact-grid">
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeaqwada" method="POST">
-        <input type="text" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-de="Ihr Name">
-        <input type="email" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-de="Ihre E-Mail">
-        <textarea placeholder="Tell me about your project..." data-placeholder-en="Tell me about your project..." data-placeholder-de="Erzählen Sie mir von Ihrem Projekt..."></textarea>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeaqwada" method="POST" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="name" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-de="Ihr Name" required>
+        <input type="email" name="email" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-de="Ihre E-Mail" required>
+        <textarea name="message" placeholder="Tell me about your project..." data-placeholder-en="Tell me about your project..." data-placeholder-de="Erzählen Sie mir von Ihrem Projekt..." required></textarea>
+        <input type="hidden" name="_subject" value="New message from mladen.consulting">
+        <input type="hidden" name="_next" value="https://mladen.consulting">
         <button type="submit" class="contact-submit" data-en="Send message" data-de="Nachricht senden">Send message</button>
       </form>
       <div class="contact-info">
