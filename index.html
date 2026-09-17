@@ -691,6 +691,11 @@
       </div>
 
     </div>
+
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="/experience" data-en="View full programme track record →" data-de="Vollständige Programmerfahrung ansehen →" style="display:inline-block;padding:12px 28px;border:1px solid var(--border);border-radius:8px;font-size:0.875rem;font-weight:500;color:var(--mid);text-decoration:none;transition:all 0.2s" onmouseover="this.style.borderColor='var(--ink)';this.style.color='var(--ink)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--mid)'">View full programme track record →</a>
+    </div>
+
   </div>
 </section>
 
@@ -707,6 +712,7 @@
         <textarea name="message" placeholder="Tell me about your project..." data-placeholder-en="Tell me about your project..." data-placeholder-de="Erzählen Sie mir von Ihrem Projekt..." required></textarea>
         <input type="hidden" name="_subject" value="New message from mladen.consulting">
         <input type="hidden" name="_next" value="https://mladen.consulting">
+        <input type="hidden" name="language" id="form-language" value="EN">
         <button type="submit" class="contact-submit" data-en="Send message" data-de="Nachricht senden">Send message</button>
       </form>
       <div class="contact-info">
@@ -718,17 +724,14 @@
           <div class="contact-link-icon">in</div>
           <span>LinkedIn Profile</span>
         </a>
-        <a href="mailto:mladen@mladen.consulting" class="contact-link">
-          <div class="contact-link-icon">🌐</div>
-          <span>mladen@mladen.consulting</span>
-        </a>
+
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Mladen Melezovic · <a href="mailto:mladen@mladen.consulting" style="color: inherit">mladen.consulting</a></p>
+  <p>© 2026 Mladen Melezovic · mladen.consulting</p>
 </footer>
 
 <script>
@@ -754,6 +757,10 @@ function setLang(lang) {
     const val = el.getAttribute('data-placeholder-' + lang);
     if (val) el.placeholder = val;
   });
+
+  // Update hidden language field so Formspree includes it in email
+  const langField = document.getElementById('form-language');
+  if (langField) langField.value = lang.toUpperCase();
 }
 
 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programme Experience – Mladen Melezovic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0a1628;--blue:#1a3a5c;--gold:#c9a84c;--light:#f8f6f0;--text:#2c2c2c;--muted:#6b7280}
+body{font-family:'Inter',sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--navy);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Playfair Display',serif;color:#fff;font-size:1.2rem;letter-spacing:0.05em}
+.nav-back{color:rgba(255,255,255,0.75);font-size:0.9rem;transition:color 0.2s}
+.nav-back:hover{color:#fff}
+
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);color:#fff;padding:8rem 2rem 4rem;text-align:center}
+.hero-label{font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);line-height:1.2;margin-bottom:1rem}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.75);max-width:580px;margin:0 auto}
+
+/* AGGREGATE STATS BAR */
+.stats-bar{background:var(--gold);padding:2rem;display:flex;flex-wrap:wrap;justify-content:center;gap:3rem}
+.stat{text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--navy)}
+.stat-label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--navy);opacity:0.75;margin-top:0.2rem}
+
+/* DOMAIN BLOCKS */
+section{padding:4.5rem 2rem}
+.container{max-width:920px;margin:0 auto}
+.domain{margin-bottom:5rem}
+.domain:last-child{margin-bottom:0}
+.domain-header{display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid var(--gold)}
+.domain-num{font-family:'Playfair Display',serif;font-size:3rem;color:var(--gold);line-height:1;flex-shrink:0}
+.domain-meta{}
+.domain-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.domain-meta h2{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,1.9rem);color:var(--navy);line-height:1.2}
+.domain-meta p{font-size:0.9rem;color:var(--muted);margin-top:0.4rem}
+
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+.fact{background:var(--light);border-radius:10px;padding:1.25rem 1.5rem;border-left:3px solid var(--gold)}
+.fact-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-bottom:0.5rem}
+.fact p{font-size:0.92rem;color:var(--text);line-height:1.55;margin:0}
+
+.bullets{list-style:none;margin-bottom:1.5rem}
+.bullets li{display:flex;gap:0.75rem;padding:0.6rem 0;border-bottom:1px solid #f0ece4;font-size:0.95rem;color:#444;line-height:1.55}
+.bullets li:last-child{border-bottom:none}
+.bullets li::before{content:"—";color:var(--gold);flex-shrink:0;font-weight:600}
+
+.tags{display:flex;flex-wrap:wrap;gap:0.5rem}
+.tag{background:var(--navy);color:rgba(255,255,255,0.82);font-size:0.75rem;padding:0.3rem 0.8rem;border-radius:20px}
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid #e8e3d8;margin:0}
+
+/* CTA */
+.cta-section{background:var(--navy);color:#fff;text-align:center;padding:5rem 2rem}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2rem);color:#fff;margin-bottom:1rem}
+.cta-section p{color:rgba(255,255,255,0.72);max-width:480px;margin:0 auto 2rem;font-size:0.97rem;line-height:1.7}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:600;font-size:0.88rem;padding:0.9rem 2rem;border-radius:6px;letter-spacing:0.06em;text-transform:uppercase;transition:opacity 0.2s}
+.btn:hover{opacity:0.85}
+
+@media(max-width:640px){
+  .facts{grid-template-columns:1fr}
+  .domain-header{gap:1rem}
+  .domain-num{font-size:2rem}
+  .stats-bar{gap:1.5rem}
+  nav{padding:1rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Mladen Melezovic</span>
+  <a href="/" class="nav-back">← Back to overview</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-label">Programme Track Record</div>
+  <h1>15+ Years of Large-Scale<br>Transformation Delivery</h1>
+  <p class="hero-sub">Senior programme leadership across Telecoms and Financial Services — from strategy through execution to measurable outcomes</p>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">€300M+</div><div class="stat-label">Largest programme</div></div>
+  <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Countries</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Industries</div></div>
+  <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Years experience</div></div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- DOMAIN 1 -->
+    <div class="domain">
+      <div class="domain-header">
+        <div class="domain-num">01</div>
+        <div class="domain-meta">
+          <div class="domain-tag">Telecoms · Germany</div>
+          <h2>BSS &amp; OSS Transformation</h2>
+          <p>End-to-end re-architecture of customer and network systems in a Tier-1 European telco</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <div class="fact-label">Scale</div>
+          <p>€300M+ portfolio across BSS migration and full network domain automation</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Complexity</div>
+          <p>350+ internal stakeholders, 2,000+ external resources, 3 cloud providers</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Scope</div>
+          <p>RAN, transport, and core network domains plus customer-facing BSS stack</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Funding model</div>
+          <p>Self-funding business case — each delivery phase financed the next from opex savings</p>
+        </div>
+      </div>
+
+      <ul class="bullets">
+        <li>Decomposed monolithic BSS into cloud-native microservices, enabling independent release cycles across domains</li>
+        <li>Designed and implemented full front-to-back order management and provisioning automation</li>
+        <li>Embedded AI decision engines for first-line contact resolution, reducing manual handling at scale</li>
+        <li>Built automated NOC capability unifying visibility and response across RAN, transport, and core</li>
+        <li>Led cross-functional governance across engineering, product, procurement, and multiple system integrators</li>
+      </ul>
+
+      <div class="tags">
+        <span class="tag">BSS Transformation</span>
+        <span class="tag">Cloud-native / Microservices</span>
+        <span class="tag">Multi-cloud</span>
+        <span class="tag">OSS / RAN / Core</span>
+        <span class="tag">NOC Automation</span>
+        <span class="tag">AI Decision Engines</span>
+        <span class="tag">JV Governance</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- DOMAIN 2 -->
+    <div class="domain" style="margin-top:4.5rem">
+      <div class="domain-header">
+        <div class="domain-num">02</div>
+        <div class="domain-meta">
+          <div class="domain-tag">Financial Services · Global</div>
+          <h2>Global Operating Model &amp; Application Harmonisation</h2>
+          <p>Redefining how a global financial services division operates across 20+ markets</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <div class="fact-label">Geographic reach</div>
+          <p>20+ countries in scope, spanning Europe, Asia, and the Americas</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Approach</div>
+          <p>Operating model defined first; SAP integration positioned as enabler, not driver</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Methodology</div>
+          <p>Tiered harmonisation: global core, locally configurable, and deliberately local processes</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Outcome</div>
+          <p>Standardised GTM process replacing bespoke local projects for every product launch</p>
+        </div>
+      </div>
+
+      <ul class="bullets">
+        <li>Mapped and classified processes across markets to distinguish what should be global vs. locally adapted</li>
+        <li>Designed application rationalisation strategy — systems of record consolidated, engagement layer configured locally</li>
+        <li>Positioned SAP as the financial backbone for group reporting and core flows, not a universal process layer</li>
+        <li>Standardised product launch workflows, cutting time-to-market and dependency on local IT for routine releases</li>
+        <li>Managed complex stakeholder landscape: regional CFOs, local business leads, Group IT, and implementation partners</li>
+      </ul>
+
+      <div class="tags">
+        <span class="tag">Operating Model Design</span>
+        <span class="tag">SAP Integration</span>
+        <span class="tag">Process Harmonisation</span>
+        <span class="tag">App Rationalisation</span>
+        <span class="tag">GTM Acceleration</span>
+        <span class="tag">Change Management</span>
+        <span class="tag">Global Rollout</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- DOMAIN 3 -->
+    <div class="domain" style="margin-top:4.5rem">
+      <div class="domain-header">
+        <div class="domain-num">03</div>
+        <div class="domain-meta">
+          <div class="domain-tag">Telecoms + Fintech · Southeast Europe</div>
+          <h2>First Digital Bank &amp; Mobile Banking Platform</h2>
+          <p>Built a country's first fully digital bank — no branches, combined Telco and banking products</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <div class="fact-label">First of its kind</div>
+          <p>First branchless digital-only bank in the market — all customer interactions mobile or online</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Product innovation</div>
+          <p>Combined Telco + banking offers on a single platform: unified billing, loyalty, cross-product eligibility</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Data-driven CX</div>
+          <p>Big Data Next Best Offer engine built on subscriber behavioural data; NPS improved +10 points</p>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Recognition</div>
+          <p>Recognised as Project of the Year across the entire group, selected from all European and Asian markets</p>
+        </div>
+      </div>
+
+      <ul class="bullets">
+        <li>Designed the end-to-end digital-only customer journey — onboarding, credit decisioning, and service entirely through mobile</li>
+        <li>Built commercial and technical architecture for bundled Telco-banking products across two regulated industries</li>
+        <li>Implemented Big Data analytics layer and Next Best Offer engine driving personalised, timely product recommendations</li>
+        <li>Embedded NPS measurement at key journey touchpoints; used feedback loops for rapid product and UX iteration</li>
+        <li>Delivered sustained +10 NPS improvement in first two years of operation</li>
+      </ul>
+
+      <div class="tags">
+        <span class="tag">Digital Bank Launch</span>
+        <span class="tag">Mobile Banking</span>
+        <span class="tag">Telco-Banking Convergence</span>
+        <span class="tag">Big Data / Next Best Offer</span>
+        <span class="tag">NPS Improvement</span>
+        <span class="tag">Fintech</span>
+        <span class="tag">Regulated Industries</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Working on something complex?</h2>
+  <p>Large-scale programmes across telecoms, financial services, and digital — let's talk about what you're trying to achieve.</p>
+  <a href="/#contact" class="btn">Get in touch</a>
+</div>
+
+</body>
+</html>
