@@ -647,6 +647,38 @@
   </div>
 </section>
 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label" style="color: rgba(255,255,255,0.5)" data-en="Get in touch" data-de="Kontakt aufnehmen">Get in touch</p>
+    <h2 class="section-title" data-en="Let's talk about your transformation" data-de="Lassen Sie uns über Ihre Transformation sprechen">Let's talk about your transformation</h2>
+    <p class="section-sub" data-en="Interested in working together? Send me a message and I'll get back to you within 24 hours." data-de="Interesse an einer Zusammenarbeit? Schreiben Sie mir und ich melde mich innerhalb von 24 Stunden.">Interested in working together? Send me a message and I'll get back to you within 24 hours.</p>
+    <div class="contact-grid">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeaqwada" method="POST" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="name" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-de="Ihr Name" required>
+        <input type="email" name="email" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-de="Ihre E-Mail" required>
+        <textarea name="message" placeholder="Tell me about your project..." data-placeholder-en="Tell me about your project..." data-placeholder-de="Erzählen Sie mir von Ihrem Projekt..." required></textarea>
+        <input type="hidden" name="_subject" value="New message from mladen.consulting">
+        <input type="hidden" name="_next" value="https://mladen.consulting">
+        <input type="hidden" name="language" id="form-language" value="EN">
+        <button type="submit" class="contact-submit" data-en="Send message" data-de="Nachricht senden">Send message</button>
+      </form>
+      <div class="contact-info">
+        <a href="mailto:mladen.melezovic@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          <span>mladen.melezovic@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/mladen-melezovic" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          <span>LinkedIn Profile</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
@@ -696,37 +728,6 @@
       <a href="/experience" data-en="View full programme track record →" data-de="Vollständige Programmerfahrung ansehen →" style="display:inline-block;padding:12px 28px;border:1px solid var(--border);border-radius:8px;font-size:0.875rem;font-weight:500;color:var(--mid);text-decoration:none;transition:all 0.2s" onmouseover="this.style.borderColor='var(--ink)';this.style.color='var(--ink)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--mid)'">View full programme track record →</a>
     </div>
 
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <p class="section-label" style="color: rgba(255,255,255,0.5)" data-en="Get in touch" data-de="Kontakt aufnehmen">Get in touch</p>
-    <h2 class="section-title" data-en="Let's talk about your transformation" data-de="Lassen Sie uns über Ihre Transformation sprechen">Let's talk about your transformation</h2>
-    <p class="section-sub" data-en="Interested in working together? Send me a message and I'll get back to you within 24 hours." data-de="Interesse an einer Zusammenarbeit? Schreiben Sie mir und ich melde mich innerhalb von 24 Stunden.">Interested in working together? Send me a message and I'll get back to you within 24 hours.</p>
-    <div class="contact-grid">
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeaqwada" method="POST" enctype="application/x-www-form-urlencoded">
-        <input type="text" name="name" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-de="Ihr Name" required>
-        <input type="email" name="email" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-de="Ihre E-Mail" required>
-        <textarea name="message" placeholder="Tell me about your project..." data-placeholder-en="Tell me about your project..." data-placeholder-de="Erzählen Sie mir von Ihrem Projekt..." required></textarea>
-        <input type="hidden" name="_subject" value="New message from mladen.consulting">
-        <input type="hidden" name="_next" value="https://mladen.consulting">
-        <input type="hidden" name="language" id="form-language" value="EN">
-        <button type="submit" class="contact-submit" data-en="Send message" data-de="Nachricht senden">Send message</button>
-      </form>
-      <div class="contact-info">
-        <a href="mailto:mladen.melezovic@gmail.com" class="contact-link">
-          <div class="contact-link-icon">✉</div>
-          <span>mladen.melezovic@gmail.com</span>
-        </a>
-        <a href="https://linkedin.com/in/mladen-melezovic" target="_blank" class="contact-link">
-          <div class="contact-link-icon">in</div>
-          <span>LinkedIn Profile</span>
-        </a>
-
-      </div>
-    </div>
   </div>
 </section>
 
@@ -787,6 +788,7 @@ window.addEventListener('scroll', () => {
   });
 });
 </script>
+
 
 </body>
 </html>
